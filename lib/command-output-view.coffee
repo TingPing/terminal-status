@@ -54,6 +54,8 @@ class CommandOutputView extends View
         return @cd args
       if cmd == 'ls'
         return @ls args
+      if cmd == 'clear'
+        @cliOutput.text ""
       @spawn inputCmd, cmd, args
 
 
